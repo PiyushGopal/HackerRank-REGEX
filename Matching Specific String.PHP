@@ -1,5 +1,10 @@
-<?php
+Regex_Pattern = r'hackerrank'
+	# Do not delete 'r'.
 
-$Regex_Pattern = '/__________/'; //Do not delete '/'. Replace __________ with your regex.
+import re
 
-$handle = fopen ("php://stdin","r");
+Test_String = input()
+
+match = re.findall(Regex_Pattern, Test_String)
+
+print("Number of matches :", len(match))
